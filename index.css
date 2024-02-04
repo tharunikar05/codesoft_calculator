@@ -1,0 +1,124 @@
+/* styles.css */
+
+/* Reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    background-color: #343a40;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggler {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.toggler-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.theme-toggler.active .toggler-icon {
+    background-color: #333;
+}
+
+.display-screen {
+    margin-bottom: 15px;
+    padding: 30px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#display {
+    font-size: 32px;
+    text-align: right;
+    overflow-x: auto;
+    white-space: nowrap;
+    color: #212529;
+}
+
+.buttons table {
+    width: 100%;
+}
+
+.buttons table tr td {
+    padding: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #495057;
+    color: #fff;
+}
+
+
+
+/* Button Colors for Light Theme */
+.calculator.light button {
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.calculator.light button.btn-operator {
+    background-color: #ced4da;
+    color: #212529;
+}
+
+.calculator.light button.btn-equal {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Button Colors for Dark Theme */
+.calculator.dark {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.calculator.dark button {
+    background-color: #495057;
+    color: #fff;
+}
+
+.calculator.dark button.btn-operator {
+    background-color: #6c757d;
+}
+
+.calculator.dark button.btn-equal {
+    background-color: #28a745;
+    color: #fff;
+}
